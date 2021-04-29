@@ -1,17 +1,20 @@
 html,body{
     margin: 0;
     padding: 0;
-    background-image: url(../img/slide3.jpg);
     background-size: cover;
+    background-image: url(../img/slide1.jpg);
+    background-repeat: no-repeat;
+    animation: slide 10s infinite;
 }
-.navbar{
-    height: 100vh;
-    width: 100%;
-    
-}
-@media only screen and (min-width: 700px) {
-    body {
-      background-image: url(../img/slide2.jpg);
-      background-size: cover;
+
+
+@keyframes slide{
+    50%{
+        background-image: url(../img/slide3.jpg);
+        background-repeat: no-repeat;
     }
-  }
+    100%{
+        background-image: url(../img/slide1.jpg);
+        background-repeat: no-repeat;
+    }
+}
